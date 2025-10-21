@@ -27,6 +27,9 @@
                 if (this.selectedOp === "%") {
                     return this.x % this.y;
                 }
+                if (this.selectedOp === "") {
+                    return "";
+                }
             }
         }
     }
