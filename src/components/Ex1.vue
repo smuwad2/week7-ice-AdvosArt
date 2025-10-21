@@ -12,23 +12,31 @@
         },
         computed: {
             result() {
-                if (this.selectedOp === "+") {
-                    return this.x + this.y;
-                }
-                if (this.selectedOp === "-") {
-                    return this.x - this.y;
-                }
-                if (this.selectedOp === "*") {
-                    return this.x * this.y;
-                }
-                if (this.selectedOp === "/") {
-                    return this.x / this.y;
-                }
-                if (this.selectedOp === "%") {
-                    return this.x % this.y;
-                }
-                if (this.selectedOp === "") {
-                    return "";
+                // if (this.selectedOp === "+") {
+                //     return this.x + this.y;
+                // }
+                // if (this.selectedOp === "-") {
+                //     return this.x - this.y;
+                // }
+                // if (this.selectedOp === "*") {
+                //     return this.x * this.y;
+                // }
+                // if (this.selectedOp === "/") {
+                //     return this.x / this.y;
+                // }
+                // if (this.selectedOp === "%") {
+                //     return this.x % this.y;
+                // }
+                // if (this.selectedOp === "") {
+                //     return "";
+                // }
+                switch (this.selectedOp) {
+                    case "+": return this.x + this.y;
+                    case "-": return this.x - this.y;
+                    case "*": return this.x * this.y;
+                    case "/": return this.x / this.y;
+                    case "%": return this.x % this.y;
+                    case "": return "";
                 }
             }
         }
